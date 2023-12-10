@@ -7,18 +7,32 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct WordGameView: View {
+    @ObservedObject var viewModel = WordGameViewModel()
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Image(viewModel.image)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+
+            Text(viewModel.displayWord)
+                .font(.largeTitle)
+
+            HStack {
+                ForEach(viewModel.choices, id: \.self) { choice in
+                    Button(String(choice)) {
+                        // Add action to handle choice selection
+                    }
+                    .font(.title)
+                    .padding()
+                }
+            }
         }
-        .padding()
+        .onAppear {
+            viewModel.selectRandomWord()
+        }
     }
 }
 
-#Preview {
-    ContentView()
-}

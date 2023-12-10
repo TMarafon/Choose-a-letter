@@ -11,7 +11,7 @@ import SwiftUI
 struct Choose_a_letterApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WordGameView()
         }
     }
 }

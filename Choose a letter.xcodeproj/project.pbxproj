@@ -11,6 +11,8 @@
 		7E03C28F2B2546E5005EE4CA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C28E2B2546E5005EE4CA /* ContentView.swift */; };
 		7E03C2912B2546E6005EE4CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E03C2902B2546E6005EE4CA /* Assets.xcassets */; };
 		7E03C2942B2546E6005EE4CA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E03C2932B2546E6005EE4CA /* Preview Assets.xcassets */; };
+		7E03C29B2B25472F005EE4CA /* WordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C29A2B25472F005EE4CA /* WordItem.swift */; };
+		7E03C29D2B254767005EE4CA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E03C29C2B254767005EE4CA /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		7E03C28E2B2546E5005EE4CA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7E03C2902B2546E6005EE4CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E03C2932B2546E6005EE4CA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E03C29A2B25472F005EE4CA /* WordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordItem.swift; sourceTree = "<group>"; };
+		7E03C29C2B254767005EE4CA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +55,12 @@
 		7E03C28B2B2546E5005EE4CA /* Choose a letter */ = {
 			isa = PBXGroup;
 			children = (
+				7E03C29C2B254767005EE4CA /* ViewModel.swift */,
 				7E03C28C2B2546E5005EE4CA /* Choose_a_letterApp.swift */,
 				7E03C28E2B2546E5005EE4CA /* ContentView.swift */,
 				7E03C2902B2546E6005EE4CA /* Assets.xcassets */,
 				7E03C2922B2546E6005EE4CA /* Preview Content */,
+				7E03C29A2B25472F005EE4CA /* WordItem.swift */,
 			);
 			path = "Choose a letter";
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E03C28F2B2546E5005EE4CA /* ContentView.swift in Sources */,
+				7E03C29B2B25472F005EE4CA /* WordItem.swift in Sources */,
+				7E03C29D2B254767005EE4CA /* ViewModel.swift in Sources */,
 				7E03C28D2B2546E5005EE4CA /* Choose_a_letterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
